@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# Sort files into folders according to their last modification date
+for x in *.png; do
+	d=$(date -r "$x" +%Y-%m-%d)
+	mkdir -p "$d"
+	mv -- "$x" "$d/"
+done
+
+for x in *.jpg; do
+	d=$(date -r "$x" +%Y-%m-%d)
+	mkdir -p "$d"
+	mv -- "$x" "$d/"
+done
+
+for x in *.jpeg; do
+	d=$(date -r "$x" +%Y-%m-%d)
+	mkdir -p "$d"
+	mv -- "$x" "$d/"
+done
+
+for x in *.gif; do
+	d=$(date -r "$x" +%Y-%m-%d)
+	mkdir -p "$d"
+	mv -- "$x" "$d/"
+done
+
+for x in *.webm; do
+	d=$(date -r "$x" +%Y-%m-%d)
+	mkdir -p "$d"
+	mv -- "$x" "$d/"
+done

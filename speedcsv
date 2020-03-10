@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Record download speed as csv
+file=$1
+interval=$2
+output=$3
+
+if [ "$file" == "-h" ]; then
+     echo -e "Usage: \n    $0 file-size interval output-file"
+fi
+while [ -z "$file" ];
+
+echo "$time,$speed"
+
+wget --output-document=/dev/null https://github.com/chanhakk/test-files/raw/master/$file
